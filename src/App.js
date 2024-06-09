@@ -1,24 +1,23 @@
-import logo from './logo.svg';
+import { AppBar, Box, IconButton, Toolbar, Typography, Button } from '@mui/material';
+import LiveTvIcon from '@mui/icons-material/LiveTv';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppBar position='static'>
+      <Toolbar>
+        <IconButton size='large' edge='start' color='inherit' aria-label='logo'>
+          <LiveTvIcon/>
+        </IconButton>
+        <Typography variant='h6'>Movix.</Typography>
+        <Box>
+          <Button>Home</Button>
+          <Button>TV Shows</Button>
+          <Button>Movies</Button>
+          <Button>Popular</Button>
+        </Box>
+      </Toolbar>
+    </AppBar>
   );
 }
 
