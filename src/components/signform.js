@@ -1,4 +1,4 @@
-export function SignUpForm() {
+export const SignUpForm = () => {
     return(
         <>
             <form>
@@ -29,7 +29,7 @@ export function SignUpForm() {
     );
 };
 
-export function SignInForm() {
+export const SignInForm = () => {
     return(
         <>
             <form>
@@ -60,7 +60,7 @@ export function SignInForm() {
     );
 }
 
-function TextSignIn() {
+const TextSignIn = () => {
     return(
         <>
             <p>New to Movix? <a href="/signup">Sign up now</a></p>
@@ -68,7 +68,7 @@ function TextSignIn() {
     );
 }
 
-function TextSignUp() {
+const TextSignUp = () => {
     return(
         <>
             <p>Already have an account <a href="signin">Sign in now</a></p>
@@ -76,7 +76,7 @@ function TextSignUp() {
     );
 }
 
-function Text() {
+const Text = () => {
     return(
         <>
             <p>Text page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="#">Learn more.</a></p>

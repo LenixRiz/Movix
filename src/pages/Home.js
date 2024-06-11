@@ -1,8 +1,6 @@
 import NavBar from '../components/navbar';
 
-import { SignInForm, SignUpForm } from '../components/signform';
-
-function Home() {
+const Home =  () => {
   return (
     <>
       <NavBar />

@@ -3,8 +3,6 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './style.css';
 
-import { Outlet, Link } from "react-router-dom";
-
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -31,7 +29,7 @@ export default function NavBar() {
     );
 }
 
-export function Brand() {
+export const Brand = () => {
     return(
         <>
             <Navbar bg="dark" data-bs-theme="dark">
@@ -45,7 +43,7 @@ export function Brand() {
     );
 }
 
-function SearchBar() {
+const SearchBar = () => {
     return(
         <Form className="d-flex">
             <Form.Control
