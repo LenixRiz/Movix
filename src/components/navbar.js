@@ -2,7 +2,6 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './style.css';
 
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -16,7 +15,7 @@ export default function NavBar() {
             <Navbar bg="dark" data-bs-theme="dark">
                 <Container>
                     <Nav className="justifiy-content-center">
-                        <Navbar.Brand onClick={() => navigate('/')}>Movix.</Navbar.Brand>
+                        <Navbar.Brand className='fw-bold' onClick={() => navigate('/')}>Movix.</Navbar.Brand>
                         <Nav.Link onClick={() => navigate('/')}>Home</Nav.Link>
                         <Nav.Link onClick={() => navigate('/shows')}>Shows</Nav.Link>
                         <Nav.Link onClick={() => navigate('/movies')}>Movies</Nav.Link>
@@ -38,7 +37,7 @@ export const Brand = () => {
             <Navbar bg="dark" data-bs-theme="dark">
                 <Container>
                     <Nav className="justifiy-content-center">
-                        <Navbar.Brand onClick={() => navigate('/')}>Movix.</Navbar.Brand>
+                        <Navbar.Brand className='fw-bold' onClick={() => navigate('/')}>Movix.</Navbar.Brand>
                     </Nav>
                 </Container>
             </Navbar>

@@ -49,7 +49,7 @@ const Admin = () => {
           onChange={handleSynopsisChange}
         />
         <br />
-        <Form.Group controlId="formFile" className="mb-3">
+        <Form.Group controlId="formFile" classNameName="mb-3">
           <Form.Label>Pilih Gambar</Form.Label>
           <Form.Control type="file" onChange={handleImageChange} />
         </Form.Group>

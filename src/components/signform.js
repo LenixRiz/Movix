@@ -1,39 +1,40 @@
 import React from "react";
 
+import { ShortFooter } from '../components/footer';
+
 import { useNavigate } from "react-router-dom";
 
-import './style.css';
+import Form from 'react-bootstrap/Form'
 
 export const SignUpForm = () => {
 
     return(
         <>
-            <div className='mt-5'>
-                <form>
-                    <h3>Sign Up</h3>
-                    <label>
-                        Email or mobile number
-                        <br/>
-                        <input type='text' placeholder=''/>
-                    </label>
+            <form className="mt-5">
+                <h3 className="fw-bold mb-4">Sign Up</h3>
+                <label>
+                    Email or mobile number
                     <br/>
-                    <label>
-                        Password
-                        <br/>
-                        <input type='text' placeholder=''/>
-                    </label>
+                    <InputText/>
+                </label>
+                <br/>
+                <label className="mt-2 mb-3">
+                    Password
                     <br/>
-                    <p className="btn">Sign In</p>
-                    <p className="btn-outline">Google</p>
-                    <br/>
-                    <label>
-                        <input type="checkbox" />
-                        I agree with the terms and service
-                    </label>
-                </form>
-                <TextSignUp/>
-                <Text/>
-            </div>
+                    <InputPass/>
+                </label>
+                <br/>
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
+                <label class="form-check-label mx-2 mb-3" for="flexCheckDefault">
+                    I agree with the terms and service
+                </label>
+                <br/>
+                <button style={{width:'18.5em'}} type='button' className="btn btn-light mt-3 mb-3 fw-bold">Sign Up</button>
+                <button style={{width:'18.5em'}} type='button' className="btn-outline fw-bold">Google</button>
+            </form>
+            <TextSignUp/>
+            <Text/>
+            <ShortFooter/>
         </>
     );
 };
@@ -41,31 +42,58 @@ export const SignUpForm = () => {
 export const SignInForm = () => {
     return(
         <>
-            <form>
-                <h3>Sign In</h3>
+            <form className="mt-5">
+                <h3 className="fw-bold mb-4">Sign In</h3>
                 <label>
                     Email or mobile number
                     <br/>
-                    <input type='text' placeholder=''/>
+                    <InputText/>
                 </label>
                 <br/>
-                <label>
+                <label className="mt-2 mb-3">
                     Password
                     <br/>
-                    <input type='text' placeholder=''/>
+                    <InputPass/>
                 </label>
                 <br/>
-                <p className="btn">Sign In</p>
-                <p className="btn-outline">Google</p>
-                <br/>
-                <label>
-                    <input type="checkbox" />
+                <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
+                <label className="form-check-label mx-2 mb-3" for="flexCheckDefault">
                     Remember me
                 </label>
+                <br/>
+                <button style={{width:'18.5em'}} type='button' className="btn btn-light mt-3 mb-3 fw-bold">Sign In</button>
+                <button style={{width:'18.5em'}} type='button' className="btn-outline fw-bold">Google</button>
             </form>
             <TextSignIn/>
             <Text/>
+            <ShortFooter/>
         </>
+    );
+}
+
+const InputText = () => {
+    return(
+        <Form className="d-flex">
+            <Form.Control
+            type="text"
+            placeholder=""
+            className="me-2 my-2"
+            style={{width:'18.5em'}}
+            />
+        </Form>
+    );
+}
+
+const InputPass = () => {
+    return(
+        <Form className="d-flex">
+            <Form.Control
+            type="pass"
+            placeholder=""
+            className="me-2 mt-2"
+            style={{width:'18.5em'}}
+            />
+        </Form>
     );
 }
 
@@ -73,7 +101,14 @@ const TextSignIn = () => {
     const navigate = useNavigate();
     return(
         <>
-            <p className='mt-2'>New to Movix? <a onClick={() => navigate('/signup')} className='fw-bold text-black' style={{textDecoration:'none'}}>Sign up now</a></p>
+            <p className='my-3'>
+                New to Movix?
+                <a onClick={() => navigate('/signup')} 
+                className='fw-bold text-white' 
+                style={{textDecoration:'none'}}>
+                    <span> </span>Sign up now
+                </a>
+            </p>
         </>
     );
 }
@@ -82,7 +117,13 @@ const TextSignUp = () => {
     const navigate = useNavigate();
     return(
         <>
-            <p className='mt-2'>Already have an account? <a onClick={() => navigate('/signin')} className='fw-bold text-black' style={{textDecoration:'none'}}>Sign in now</a></p>
+            <p className='my-3'>
+                Already have an account?
+                <a onClick={() => navigate('/signin')} 
+                className='fw-bold text-white' style={{textDecoration:'none'}}>
+                    <span> </span>Sign in now
+                </a>
+            </p>
         </>
     );
 }
@@ -90,7 +131,7 @@ const TextSignUp = () => {
 const Text = () => {
     return(
         <>
-            <p className='w-75'>Text page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="#" className='text-primary'>Learn more.</a></p>
+            <p className='w-75 text-sec mt-4'>Text page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="#" className='text-primary'>Learn more.</a></p>
         </>
     );
 }

@@ -11,7 +11,6 @@ const SignUp = () => {
             <Brand/>
             <Page/>
         </>
-        
     );
 }
 
