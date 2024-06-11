@@ -16,14 +16,28 @@ export default function NavBar() {
             <Navbar bg="dark" data-bs-theme="dark">
                 <Container>
                     <Nav className="justifiy-content-center">
-                        <Navbar.Brand href="#home">Movix.</Navbar.Brand>
+                        <Navbar.Brand href="/">Movix.</Navbar.Brand>
                         <Nav.Link href="/">Home</Nav.Link>
                         <Nav.Link href="/shows">Shows</Nav.Link>
-                        <Nav.Link href="/movie">Movies</Nav.Link>
+                        <Nav.Link href="/movies">Movies</Nav.Link>
                     </Nav>
                     <Nav>
                         <SearchBar/>
                         <Nav.Link href="/signup">Sign Up</Nav.Link>
+                    </Nav>
+                </Container>
+            </Navbar>
+        </>
+    );
+}
+
+export function Brand() {
+    return(
+        <>
+            <Navbar bg="dark" data-bs-theme="dark">
+                <Container>
+                    <Nav className="justifiy-content-center">
+                        <Navbar.Brand href="/">Movix.</Navbar.Brand>
                     </Nav>
                 </Container>
             </Navbar>

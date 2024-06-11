@@ -1,8 +1,12 @@
 import { SignInForm } from '../components/signform';
+import { Brand } from '../components/navbar';
 
 const SignIn = () => {
     return(
-        <SignInForm/>
+        <>
+            <Brand />
+            <SignInForm />
+        </>
     );
 }
 
