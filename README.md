@@ -1,3 +1,8 @@
+## Figma Design Here!!
+
+https://www.figma.com/design/ugGUtQloH8hYZeAzsVtTEs/movix-app?node-id=18-35&t=D6MUpq3BTBOj8ZuJ-1
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
