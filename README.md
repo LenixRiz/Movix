@@ -1,7 +1,20 @@
-## Figma Design Here!!
+# Movix created by
+
+### `Rizky Fajar Maulana - 22520002`
+### `Hendrico Surya Saputra - 22520003`
+### `Cahyo Kurniawan - 22520020`
+### `Siti Kholifah - 22510002`
+### `Muhammad Caesar Wicaksono- 22510005`
+### `Arnoldew Ray Ruby - 22510009`
+### `Kun Lang Ragil - 22510012`
+
+# Figma Design Here
 
 https://www.figma.com/design/ugGUtQloH8hYZeAzsVtTEs/movix-app?node-id=18-35&t=D6MUpq3BTBOj8ZuJ-1
 
+# API Used
+
+The Movie Database => https://www.themoviedb.org/
 
 # Getting Started with Create React App
 
