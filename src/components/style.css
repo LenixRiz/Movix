@@ -1,0 +1,86 @@
+:root {
+    --main:#0C0C0C;
+    --secondary:#481E14;
+    --third:#9B3922;
+    --accent:#F2613F;
+    
+    --white:#F9F6EE;
+    --success:#22BB33;
+    --danger:#BB2124;
+}
+
+.main {
+    background-color: var(--main);
+}
+
+.main-text {
+    color: var(--main);
+}
+
+.secondary {
+    background-color: var(--secondary);
+}
+
+.third {
+    background-color: var(--third);
+}
+
+.accent {
+    background-color: var(--accent);
+}
+
+.white {
+    background-color: var(--white);
+}
+
+.white-text {
+    color: var(--white);
+}
+.success{
+    background-color: var(--success);
+}
+
+.danger {
+    background-color: var(--danger);
+}
+
+/* Button */
+.btn {
+    background-color: white;
+    color: black;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+};
+
+.btn-outline {
+    border: 2px solid white;
+    background-color: none;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+};
+
+.btn:hover {
+    background-color: none;
+    color: white;
+}
+
+.btn-outline:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Input */
+.input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+};

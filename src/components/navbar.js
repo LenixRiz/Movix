@@ -1,27 +1,45 @@
 import React from 'react';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './style.css';
-import Container from 'react-bootstrap/Container'
-import Nav from 'react-bootstrap/Nav'
-import Navbar from 'react-bootstrap/Navbar'
+
+import { Outlet, Link } from "react-router-dom";
+
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import Form from 'react-bootstrap/Form'
 
 export default function NavBar() {
     return(
         <>
             <Navbar bg="dark" data-bs-theme="dark">
                 <Container>
-                    <Navbar.Brand href="#home">Movix.</Navbar.Brand>
                     <Nav className="justifiy-content-center">
-                        <Nav.Link href="#home">Home</Nav.Link>
-                        <Nav.Link href="#shows">Shows</Nav.Link>
-                        <Nav.Link href="#movie">Movie</Nav.Link>
+                        <Navbar.Brand href="#home">Movix.</Navbar.Brand>
+                        <Nav.Link href="/">Home</Nav.Link>
+                        <Nav.Link href="/shows">Shows</Nav.Link>
+                        <Nav.Link href="/movie">Movies</Nav.Link>
                     </Nav>
                     <Nav>
-                        <Nav.Link href="#signup">Sign Up</Nav.Link>
+                        <SearchBar/>
+                        <Nav.Link href="/signup">Sign Up</Nav.Link>
                     </Nav>
                 </Container>
             </Navbar>
-            <br />
         </>
+    );
+}
+
+function SearchBar() {
+    return(
+        <Form className="d-flex">
+            <Form.Control
+            type="search"
+            placeholder="Search"
+            className="me-2"
+            aria-label="Search anything..."
+            />
+        </Form>
     );
 }
