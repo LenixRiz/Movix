@@ -5,6 +5,7 @@ import SignIn from './pages/Signin';
 import SignUp from './pages/Signup';
 import Shows  from './pages/Shows';
 import Movies from './pages/Movies';
+import NoPage from './pages/NoPage';
 
 import './App.css';
 
@@ -18,6 +19,7 @@ function App() {
             <Route path='signin' element={<SignIn/>} />
             <Route path='movies' element={<Movies/>} />
             <Route path='shows' element={<Shows/>} />
+            <Route path='*' element={<NoPage/>} />
         </Routes>
       </Router>
     </>

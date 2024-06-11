@@ -106,3 +106,12 @@ img {
     border-radius: 4px;
     box-sizing: border-box;
 };
+
+/* Utilities */
+.container {
+    margin: 0 400px;
+};
+
+.maxw {
+    max-width: 300px;
+};
