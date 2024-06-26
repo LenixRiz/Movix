@@ -8,9 +8,6 @@ import Movies from './pages/Movies';
 import Streams from './pages/Streaming';
 import NoPage from './pages/NoPage';
 import Admin from './pages/admin/Admin';
-import List from "././pages/admin/list/List";
-import Single from "././pages/admin/single/Single";
-import New from "././pages/admin/new/New";
 import { AuthContext } from './context/AuthContext';
 import { useContext } from 'react';
 
