@@ -6,7 +6,8 @@ const Shows = () => {
         <>
             <NavBar />
             <h1>Shows</h1>
-            <Footer />
+            {/* <Footer /> */}
+            {/* API FILM IKO DISINI */}
         </>
     );
 }
