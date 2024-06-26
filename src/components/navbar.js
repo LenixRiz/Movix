@@ -19,6 +19,7 @@ export default function NavBar() {
                         <Nav.Link onClick={() => navigate('/')}>Home</Nav.Link>
                         <Nav.Link onClick={() => navigate('/shows')}>Shows</Nav.Link>
                         <Nav.Link onClick={() => navigate('/movies')}>Movies</Nav.Link>
+                        <Nav.Link onClick={() => navigate('/streams')}>Stream</Nav.Link>
                     </Nav>
                     <Nav>
                         <SearchBar/>
