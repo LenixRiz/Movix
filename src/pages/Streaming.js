@@ -9,7 +9,7 @@ const Streams = () => {
         <div>
             <NavBar/>
             <h1>Streaming</h1>
-            <Comments />
+            {/* <Comments /> */}
             <Footer/>
         </div>
     )
