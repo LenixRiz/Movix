@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import './sign.css'
+import NavBar from "../components/navbar";
+import log from "../assets/log.jpg"
 
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../firebase";
@@ -40,24 +42,29 @@ const SignIn = () => {
   }
 
   return (
+    <>
+    <NavBar />
     <div className="signup-container">
       <div className="signup-grid">
         <div className="signup-form">
           <form onSubmit={handleLogin}>
-            <h2>Login</h2>
+            <h2 style={{color: "black"}}>Login</h2>
             <input type="email" placeholder="Email" onChange={e => setEmail(e.target.value)}/>
             <input type="password" placeholder="Password" onChange={e => setPassword(e.target.value)}/>
-            <button type="submit">Sign Up</button>
+            <button type="submit">Sign In</button>
             {error && <span className="error-message">Wrong email or password!</span>} 
           </form>
-          <p>Doesn't have an account? <a to="/signin">Sign In</a></p>
+          <p style={{color: "black"}}>Doesn't have an account? <a onClick={() => navigate('/signup')}>Sign Up</a></p>
         </div>
         <div className="signup-image">
           {/* Replace with your actual image */}
-          <img src="https://images.unsplash.com/photo-1503023345541-14a0db4086e7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Signup Image" />
+          <img src='https://unsplash.com/photos/the-walking-dead-dvd-movie-wMkaMXTJjlQ' alt="Signup Image" />
         </div>
       </div>
     </div>
+    </>
+    
+    
   );
 }
 

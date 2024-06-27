@@ -1,0 +1,94 @@
+/* Anggota.css */
+
+.container-anggota {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #181c22;
+    color: #f9f6ee;
+    font-family: 'Montserrat';
+  }
+  
+  .title-anggota {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .input-anggota {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+  }
+  
+  .button-anggota {
+    padding: 10px 20px;
+    background-color: #e50914;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    margin: 0 8px;
+  }
+  
+  button:hover {
+    background-color: #c90000;
+  }
+  
+  .anggota-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 3em 1em;
+  }
+  
+  .anggota-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 240px;
+    background-color: #212121;
+    border-radius: 5px;
+  }
+  
+  .button-group-anggota {
+    display: flex;
+    gap: 10px;
+    margin: 0 24px;
+  }
+  
+  .anggota-item h1 {
+    margin: 0;
+    flex-shrink: 0;
+  }
+  
+  /* Make button styles more specific */
+  .anggota-item .button-group-anggota button { 
+    background-color: #313131;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+  
+  .anggota-item .button-group-anggota button:hover {
+    background-color: #424242;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    input {
+      width: 100%;
+    }
+  
+    .anggota-item {
+      flex-direction: column;
+      gap: 5px;
+    }
+  }
+  

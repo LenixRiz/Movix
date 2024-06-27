@@ -25,7 +25,7 @@ const MovixHomePage = () => {
             <div className="col-md-2 col-1"></div>
             <div className="col-md-8 col-10 p-0 main-search">
               <div className="input-group mb-3">
-                <input type="text" className="form-control" placeholder="Email address" />
+                <input type="email" className="form-control" placeholder="Email address" />
                 <span className="input-group-text" id="basic-addon2">Get Started <i className="bi bi-chevron-right text-white"></i></span>
               </div>
             </div>

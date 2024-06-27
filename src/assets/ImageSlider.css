@@ -1,0 +1,63 @@
+.image-slider {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .slick-prev, .slick-next {
+    font-size: 20px;
+    color: #000; /* warna panah */
+  }
+  
+  .slick-prev:before, .slick-next:before {
+    font-family: 'slick';
+    font-size: 30px;
+  }
+  
+  .image-slider img , h1{
+
+    width: 50%; /* Lebar gambar 100% dari parent container */
+    height: auto; /* Tinggi gambar menyesuaikan proporsi aslinya */
+    object-fit: cover; /* Gambar diatur untuk mengisi container */
+    box-shadow: 0px 0px 8px rgb(0, 0, 0, 1);
+    object-fit: cover;
+  }
+
+  .image-slider img , h1{
+    text-align: center;
+    justify-content: center;
+  }
+  
+  /* ImageSlider.css */
+
+.slick-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.slick-slide img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto; 
+}
+
+.slick-slide img ,h1 {
+    max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto; 
+}
+
+
+/* ImageSlider.css */
+.image-slider  {
+    position: relative; /* Pastikan container memiliki posisi relatif */
+  }
+  
+  body{
+    background-color: #000;
+  }
+
+  h1{
+    color: white;
+  }

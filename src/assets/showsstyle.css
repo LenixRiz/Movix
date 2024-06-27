@@ -1,0 +1,140 @@
+
+/* showsstyle.css */
+.App {
+    text-align: center;
+  }
+  
+  .App-header {
+    background-color: #1c1c1c;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    position: relative;
+    padding: 20px;
+    background-image: linear-gradient(to right, #000428, #004e92);
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
+  .Movie-container {
+    width: 80%; /* Sesuaikan lebar */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 16px; /* Jarak antar elemen */
+    overflow-x: auto;
+    padding: 20px; /* Tambahkan padding */
+    scroll-behavior: smooth;
+    background-color: rgba(0, 0, 0, 0.7); /* Latar belakang semi-transparan */
+    border-radius: 10px;
+    position: relative;
+    height: 300px; /* Sesuaikan tinggi */
+    align-items: center;
+  }
+  
+  .Movie-wrapper {
+    min-width: 150px; /* Lebar minimal */
+    max-width: 150px; /* Lebar maksimal */
+    background-color: #f0f0f0;
+    color: black;
+    flex: 0 0 auto;
+    padding: 8px; 
+    border-radius: 12px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Elemen-elemen dalam wrapper terpisah */
+  }
+  
+  .Movie-wrapper:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .Movie-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 8px; 
+  }
+  
+  .Movie-search {
+    height: 50px;
+    font-size: 20px;
+    margin-bottom: 24px;
+    padding: 12px;
+    font-weight: bold;
+    width: 400px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s;
+  }
+  
+  .Movie-search:focus {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .Movie-title {
+    font-weight: bold;
+    font-size: 12px; /* Kurangi ukuran font */
+    margin-top: 4px;
+  }
+  
+  .Movie-date {
+    font-style: italic;
+    margin-top: 4px;
+    font-size: 10px; /* Kurangi ukuran font */
+  }
+  
+  .Movie-rate {
+    color: #e67e22;
+    margin-top: 4px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .Movie-scroll-button {
+    cursor: pointer;
+    user-select: none;
+    background-color: #61dafb;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 24px;
+    transition: background-color 0.3s;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    border-radius: 50%;
+  }
+  
+  .Movie-scroll-button:hover {
+    background-color: #21a1f1;
+  }
+  
+  .Movie-scroll-button.left {
+    left: 10px; /* Posisi kiri di luar container */
+  }
+  
+  .Movie-scroll-button.right {
+    right: 10px; /* Posisi kanan di luar container */
+  }
+  
+  h1 {
+    font-size: 2.5rem; /* Sesuaikan ukuran font judul */
+    margin-bottom: 20px;
+  }
+  
+  input::placeholder {
+    color: #999;
+    font-style: italic;
+  }

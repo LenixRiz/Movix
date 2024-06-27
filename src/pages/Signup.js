@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import './sign.css'
+import NavBar from "../components/navbar-log";
 
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../firebase";
@@ -36,17 +37,19 @@ const SignUp = () => {
   }
 
   return (
-    <div className="signup-container">
+    <>
+      <NavBar />
+      <div className="signup-container">
       <div className="signup-grid">
         <div className="signup-form">
           <form onSubmit={handleSignUp}>
-            <h2>Sign Up</h2>
+            <h2 style={{"color": "black"}}>Sign Up</h2>
             <input type="email" placeholder="Email" onChange={e => setEmail(e.target.value)}/>
             <input type="password" placeholder="Password" onChange={e => setPassword(e.target.value)}/>
             <button type="submit">Sign Up</button>
             {error && <span className="error-message">Wrong email or password!</span>} 
           </form>
-          <p>Already have an account? <a to="/signin">Sign In</a></p>
+          <p style={{"color": "black"}}>Already have an account? <a onClick={(e) => navigate("/signin")}>Sign In</a></p>
         </div>
         <div className="signup-image">
           {/* Replace with your actual image */}
@@ -54,6 +57,7 @@ const SignUp = () => {
         </div>
       </div>
     </div>
+    </>
   );
 }
 
